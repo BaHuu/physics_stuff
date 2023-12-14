@@ -15,7 +15,7 @@ A problémánk a következő: ábrázolni kell az izobár, izoterm és izochor f
 Ugye elsőnek behívjuk a könyvtárakat amiket használni szeretnénk. Ez a `pandas` és a `matplotlib`.
 
 Elsőnek létre kell hoznunk al grafikonokat, mivel 1 ablakban szeretnénk kiírni mind a 3 folyamatot, ezt az elő sorral csinájuk meg.
-Utána meghívom a 3 függvényünket ami hozzá adja az `axs`-hez a kiszámolt folyamatot.
+Utána meghívom a 3 függvényünket ami hozzá adja a subplot-hoz a kiszámolt folyamatot.
 
 ```python
 fig, axs = plt.subplots(2, 2, figsize=(6, 6))
@@ -38,7 +38,7 @@ ax.xaxis.set_label_position('top')
 
 Ez létrehozza a gráfunkat és hozzáadja subplot-hoz.
 Az első sor létrehozza a "keretet", ez a gráf két (vagy több, pl.: ha 3D-s a gráf akkor 3) tengelyének az értékeit definiálja.
-A másodiktól lefelé meg csak kicsicsázom a gráfot.
+A harmadik sortól lefelé meg csak kicsicsázom a gráfot.
 
 Az első fele az a kiszámolás
 
@@ -53,4 +53,4 @@ for V in V_values:
 ```
 
 Csak az elsőt magyarázom el, bár nem olyan nehéz. A `V_values` az a térfogat. Ezt csak egyenletesen emeljük (0.1-essével)
-A `P_values` pedig aNyomás, ezt meg kiszámoljuk az egyetemes gáztörvény segítségével.
+A `P_values` pedig a nyomás, ezt meg kiszámoljuk az egyetemes gáztörvény segítségével, őgy hogy végig megyünk a térfogat számain egy for loop-al.
