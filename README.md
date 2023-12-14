@@ -53,4 +53,4 @@ for V in V_values:
 ```
 
 Csak az elsőt magyarázom el, bár nem olyan nehéz. A `V_values` az a térfogat. Ezt csak egyenletesen emeljük (0.1-essével)
-A `P_values` pedig a nyomás, ezt meg kiszámoljuk az egyetemes gáztörvény segítségével, őgy hogy végig megyünk a térfogat számain egy for loop-al.
+A `P_values` pedig a nyomás, ezt meg kiszámoljuk az egyetemes gáztörvény segítségével, úgy hogy végig megyünk a térfogat számain egy for loop-al.
