@@ -10,15 +10,15 @@ V = n * R * T / P # m^3 | Térfogat
 
 # Izobár folyamat (állandó nyomás)
 def plot_isobaric(ax):
-    # A térfogatot 1 és 100 között egyenletesen változtatjuk
+    # A térfogatot 0.1 és 10 között egyenletesen változtatjuk
     V_values = []
     for v in range(1, 101):
         V_values.append(v / 10)
 
     # A hőmérséklet kiszámolása a térfogat függvényében
     T_values = []
-    for V in V_values:
-        T_values.append(P * V / (n * R))
+    for v in V_values:
+        T_values.append(P * v / (n * R))
 
     # Értékek megjeleítése, és  pici formázás
     df = pd.DataFrame({'Térfogat (m^3)': V_values, 'Hőmérséklet (K)': T_values})
@@ -34,8 +34,8 @@ def plot_isothermal(ax):
         V_values.append(v / 10)
 
     P_values = []
-    for V in V_values:
-        P_values.append(n * R * T / V)
+    for v in V_values:
+        P_values.append(n * R * T / v)
 
     df = pd.DataFrame({'Térfogat (m^3)': V_values, 'Nyomás (Pa)': P_values})
     df.plot(x='Térfogat (m^3)', y='Nyomás (Pa)', label='izoterm', ax=ax)
