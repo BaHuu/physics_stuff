@@ -45,7 +45,7 @@ def plot_isothermal(ax):
 
 # Izochor folyamat (állandó térfogat)
 def plot_isochoric(ax):
-    T_values = [t for t in range(100, 501)]
+    T_values = []
     for v in range(100, 501):
         T_values.append(v)
 
