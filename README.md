@@ -36,9 +36,9 @@ ax.yaxis.set_label_position('right')
 ax.xaxis.set_label_position('top')
 ```
 
-Ez létrehozza a gráfunkat és hozzáadja subplot-hoz.
-Az első sor létrehozza a "keretet", ez a gráf két (vagy több, pl.: ha 3D-s a gráf akkor 3) tengelyének az értékeit definiálja.
-A harmadik sortól lefelé meg csak kicsicsázom a gráfot.
+Ez létrehozza a grafikonunkat és hozzáadja subplot-hoz.
+Az első sor létrehozza a "keretet", ez a gafikon két (vagy több, pl.: ha 3D-s a gráf akkor 3) tengelyének az értékeit definiálja.
+A harmadik sortól lefelé meg csak kicsicsázom a grafikont.
 
 Az első fele az a kiszámolás
 
